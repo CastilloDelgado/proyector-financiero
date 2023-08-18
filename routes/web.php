@@ -15,12 +15,15 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function(){
     return Inertia::render('Home');
 });
 
-Route::get('/', function(){
+Route::get('/calculator', function(){
+    return Inertia::render('Calculator');
+});
+
+Route::get('/calendar', function(){
     return Inertia::render('Calendar');
 });
 
