@@ -21,18 +21,18 @@ onMounted(() => {
 
 <template>
     <div class="container mx-auto">
-        <nav class="flex sticky-top justify-between px-6 py-3  border-b-4 border-white bg-gradient-to-r from-green-600 to-green-900">
+        <nav class="flex sticky-top justify-between px-6 py-3 border-b-4 border-green-700 bg-gradient-to-r from-green-600 to-green-900">
             <p class="font-bold text-white text-2xl">
                 ¿cuandovoyaserlibre.info?
             </p>
             <div class="flex text-white font-bold">
-                <button class="mr-4 hover:underline">Menú</button>
+                <button class="mr-4 hover:underline">¿Qué es esto?</button>
                 <button class="mr-4 hover:underline">Registrate</button>
                 <button class="hover:underline">Iniciar Sesión</button>
             </div>
         </nav>
         <div>
-            <div class="h-[80vh] bg-gradient-to-r from-blue-500 to-green-500 flex">
+            <div class="h-[80vh] bg-gradient-to-r from-blue-500 border-t-4 border-white  to-green-500 flex">
                 <div class="flex w-2/3 items-center h-full">
                     <div class="flex flex-col justify-center transition h-2/4">     
                         <TransitionRoot
@@ -42,7 +42,7 @@ onMounted(() => {
                             enter-from="opacity-0 rotate-[-120deg] scale-0"
                             enter-to="opacity-100 rotate-0 scale-100"
                         >
-                            <p class="text-center text-8xl font-bold text-white flex flex-wrap px-12 -rotate-12 transition mb-16">
+                            <p class="text-center text-8xl font-bold text-white flex flex-wrap px-12 -rotate-6 transition mb-16">
                                 ¡¡¿Cuando voy a ser libre?!!
                             </p>
                         </TransitionRoot>
@@ -53,7 +53,7 @@ onMounted(() => {
                                 enter-from="translate-y-full opacity-0"
                                 enter-to="translate-y-0 opacity-100"
                             >
-                                <button class="text-xl px-6 py-2 font-bold bg-green-600 rounded-lg text-white border-4 border-white transition hover:scale-110 hover:bg-green-500">
+                                <button class="text-xl px-6 py-2 font-bold bg-green-600 rounded-lg text-white border-2 border-white transition hover:scale-105 hover:bg-green-500">
                                     ¡Descubrelo aquí!
                                 </button>
                             </TransitionRoot>
