@@ -78,6 +78,14 @@ onMounted(() => {
                 <p class="text-center text-6xl font-bold text-white">Herramientas</p>
             </div>
             <div class="flex justify-center gap-6 items-center h-3/4">
+                <Link href="/calculator" class="bg-blue-500 border-white border-4 text-white rounded-lg hover:scale-105 transition">
+                    <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
+                        <p class="font-bold text-2xl text-center">Calculadora</p>
+                        <div class="justify-center w-full flex">
+                            <img src="./calculator.png" alt="" class="w-64 justify-center">
+                        </div>
+                    </div>
+                </Link>
                 <Link href="/calculator" class="bg-blue-400 border-white border-4 text-white rounded-lg hover:scale-105 transition">
                     <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
                         <p class="font-bold text-2xl text-center">Calculadora</p>
@@ -86,7 +94,7 @@ onMounted(() => {
                         </div>
                     </div>
                 </Link>
-                <Link href="/calendar" class="bg-red-500 border-white border-4 text-white  rounded-lg  hover:scale-105 transition">
+                <Link href="/calendar" class="bg-blue-300 border-white border-4 text-white  rounded-lg  hover:scale-105 transition">
                    <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
                         <p class="font-bold text-2xl text-center">Calendario</p>
                         <div class="justify-center w-full flex">
@@ -96,6 +104,13 @@ onMounted(() => {
                 </Link>
             </div>
         </div>
+
+        <footer class="bg-green-900 border-t-4 border-white">
+            <div class="flex justify-center text-white py-4">
+                <p class="mr-1">Creardo por</p>
+                <p class="font-bold">Marco Castillo</p>
+            </div>
+        </footer>
     </div>
   
 </template>
