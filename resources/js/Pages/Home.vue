@@ -73,9 +73,28 @@ onMounted(() => {
             </div>
         </div>
 
-        <div class="flex jusitfy-center">
-            <Link href="/calculator"><button class="bg-blue-400 rounded-md text-white font-bold p-2 ml-2">Caluladora</button></Link>
-            <Link href="/calendar"><button class="bg-blue-400 rounded-md text-white font-bold p-2 ml-2">Calendario</button></Link>
+        <div class="h-[80vh] bg-gradient-to-r from-red-500 border-t-4 border-white to-blue-500 ">
+            <div class="pt-24 h-1/4">
+                <p class="text-center text-6xl font-bold text-white">Herramientas</p>
+            </div>
+            <div class="flex justify-center gap-6 items-center h-3/4">
+                <Link href="/calculator" class="bg-blue-400 border-white border-4 text-white rounded-lg hover:scale-105 transition">
+                    <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
+                        <p class="font-bold text-2xl text-center">Calculadora</p>
+                        <div class="justify-center w-full flex">
+                            <img src="./calculator.png" alt="" class="w-64 justify-center">
+                        </div>
+                    </div>
+                </Link>
+                <Link href="/calendar" class="bg-red-500 border-white border-4 text-white  rounded-lg  hover:scale-105 transition">
+                   <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
+                        <p class="font-bold text-2xl text-center">Calendario</p>
+                        <div class="justify-center w-full flex">
+                            <img src="./calendar.jpg" alt="" class="w-64 justify-center">
+                        </div>
+                    </div>
+                </Link>
+            </div>
         </div>
     </div>
   
