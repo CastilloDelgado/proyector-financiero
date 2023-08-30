@@ -27,6 +27,10 @@ Route::get('/calendar', function(){
     return Inertia::render('Calendar');
 });
 
+Route::get('/credit-cards', function(){
+    return Inertia::render('CreditCards');
+});
+
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [

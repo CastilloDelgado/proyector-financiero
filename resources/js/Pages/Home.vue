@@ -6,6 +6,7 @@ import { TransitionRoot } from '@headlessui/vue'
 import image from "./header.png"
 import { ref } from 'vue';
 import { onMounted } from 'vue';
+import AppLayout from '@/Layouts/AppLayout.vue';
 
 const showTitle = ref(false)
 const showPerson = ref(false)
@@ -20,17 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="container mx-auto">
-        <nav class="flex sticky-top justify-between px-6 py-3 border-b-4 border-green-700 bg-gradient-to-r from-green-600 to-green-900">
-            <p class="font-bold text-white text-2xl">
-                ¿cuandovoyaserlibre.info?
-            </p>
-            <div class="flex text-white font-bold">
-                <button class="mr-4 hover:underline">¿Qué es esto?</button>
-                <button class="mr-4 hover:underline">Registrate</button>
-                <button class="hover:underline">Iniciar Sesión</button>
-            </div>
-        </nav>
+    <AppLayout>
         <div>
             <div class="h-[80vh] bg-gradient-to-r from-blue-500 border-t-4 border-white  to-green-500 flex">
                 <div class="flex w-2/3 items-center h-full">
@@ -78,12 +69,9 @@ onMounted(() => {
                 <p class="text-center text-6xl font-bold text-white">Herramientas</p>
             </div>
             <div class="flex justify-center gap-6 items-center h-3/4">
-                <Link href="/calculator" class="bg-blue-500 border-white border-4 text-white rounded-lg hover:scale-105 transition">
+                <Link href="/credit-cards" class="bg-blue-500 border-white border-4 text-white rounded-lg hover:scale-105 transition">
                     <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
-                        <p class="font-bold text-2xl text-center">Calculadora</p>
-                        <div class="justify-center w-full flex">
-                            <img src="./calculator.png" alt="" class="w-64 justify-center">
-                        </div>
+                        <p class="font-bold text-2xl text-center">Tarjetas de Crédito</p>
                     </div>
                 </Link>
                 <Link href="/calculator" class="bg-blue-400 border-white border-4 text-white rounded-lg hover:scale-105 transition">
@@ -95,7 +83,7 @@ onMounted(() => {
                     </div>
                 </Link>
                 <Link href="/calendar" class="bg-blue-300 border-white border-4 text-white  rounded-lg  hover:scale-105 transition">
-                   <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
+                <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
                         <p class="font-bold text-2xl text-center">Calendario</p>
                         <div class="justify-center w-full flex">
                             <img src="./calendar.jpg" alt="" class="w-64 justify-center">
@@ -104,13 +92,5 @@ onMounted(() => {
                 </Link>
             </div>
         </div>
-
-        <footer class="bg-green-900 border-t-4 border-white">
-            <div class="flex justify-center text-white py-4">
-                <p class="mr-1">Creardo por</p>
-                <p class="font-bold">Marco Castillo</p>
-            </div>
-        </footer>
-    </div>
-  
+    </AppLayout>
 </template>
