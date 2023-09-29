@@ -31,6 +31,10 @@ Route::get('/credit-cards', function(){
     return Inertia::render('CreditCards');
 });
 
+Route::get('/expense-control', function(){
+    return Inertia::render('ExpenseControl');
+});
+
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [

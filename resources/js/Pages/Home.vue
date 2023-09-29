@@ -69,12 +69,15 @@ onMounted(() => {
                 <p class="text-center text-6xl font-bold text-white">Herramientas</p>
             </div>
             <div class="flex justify-center gap-6 items-center h-3/4">
-                <Link href="/credit-cards" class="bg-blue-500 border-white border-4 text-white rounded-lg hover:scale-105 transition">
+                <Link href="/expense-control" class="bg-blue-500 border-white border-4 text-white rounded-lg hover:scale-105 transition">
                     <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
-                        <p class="font-bold text-2xl text-center">Tarjetas de Crédito</p>
+                        <p class="font-bold text-2xl text-center">Control de Gastos</p>
+                        <div class="justify-center w-full flex">
+                            <img src="./money.jpg" alt="" class="w-64 justify-center">
+                        </div>
                     </div>
                 </Link>
-                <Link href="/calculator" class="bg-blue-400 border-white border-4 text-white rounded-lg hover:scale-105 transition">
+                <!-- <Link href="/calculator" class="bg-blue-400 border-white border-4 text-white rounded-lg hover:scale-105 transition">
                     <div class="grid grid-cols-1 gap-4 place-content-center justify-center p-4">
                         <p class="font-bold text-2xl text-center">Calculadora</p>
                         <div class="justify-center w-full flex">
@@ -89,7 +92,7 @@ onMounted(() => {
                             <img src="./calendar.jpg" alt="" class="w-64 justify-center">
                         </div>
                     </div>
-                </Link>
+                </Link> -->
             </div>
         </div>
     </AppLayout>
