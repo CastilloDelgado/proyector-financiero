@@ -37,3 +37,18 @@ return new class extends Migration
         Schema::dropIfExists('credit_cards');
     }
 };
+
+$creditCard = App\Models\CreditCard::create([
+    "name" => 'test',
+    "bank" => 'test',
+    "credit_limit" => 5000,
+    "credit_available" => 5000,
+    "credit_used" => 0,
+    "minimum_payment" => 0,
+    "full_payment" => 0,
+    "annual_payment" => 0,
+    "next_annual_payment_date" => "2022-01-01",
+    "cutoff_date" => 1,
+    "payment_date" => 1,
+    "expires_at" => "2022-01-01"
+]);
